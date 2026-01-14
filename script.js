@@ -94,7 +94,7 @@ function updateCounters() {
 // وظيفة عداد الحب (يجب ضبط تاريخ بداية الحب هنا)
 function updateLoveCounter() {
     // ضع تاريخ بداية حبك هنا (سنة، شهر-1، يوم)
-    const loveStartDate = new Date(2023, 5, 15); // مثال: 15 يونيو 2023
+    const loveStartDate = new Date(2021, 10, 27); // مثال: 15 يونيو 2023
     
     const now = new Date();
     const diffTime = Math.abs(now - loveStartDate);
@@ -145,7 +145,7 @@ function updateLoveCounter() {
 // وظيفة عداد عمر حبيبتك (يجب ضبط تاريخ ميلادها هنا)
 function updateAgeCounter() {
     // ضع تاريخ ميلاد حبيبتك هنا (سنة، شهر-1، يوم)
-    const birthDate = new Date(2002, 7, 20); // مثال: 20 أغسطس 2002
+    const birthDate = new Date(2008, 11, 8); // مثال: 20 أغسطس 2002
     
     const now = new Date();
     const diffTime = Math.abs(now - birthDate);
