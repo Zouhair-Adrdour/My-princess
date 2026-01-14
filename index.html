@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<html lang="ar">
-
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>MCHICHTY-H-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mchichty-H-❤️</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- شريط التنقل المحدث بدون دوائر -->
+    <nav class="navigation">
+    <div class="nav-container">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="love-counter.html" class="nav-item">
+            <i class="fas fa-heart"></i>
+            <span>عداد حبنا</span>
+        </a>
+        <a href="age-counter.html" class="nav-item">
+            <i class="fas fa-birthday-cake"></i>
+            <span>عمر حبيبتي</span>
+        </a>
+        <a href="cats.html" class="nav-item">
+            <i class="fas fa-cat"></i>
+            <span>القطط</span>
+        </a>
+        <a href="love-letter.html" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>رسالة حب</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+            <i class="fas fa-star"></i>
+            <span>مفضلاتها</span>
+        </a>
+        <div class="nav-indicator"></div>
+    </div>
+</nav>
 
-    <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="love-counter.html">عداد حبنا</a>
-        <a href="age-counter.html">عمرها</a>
-        <a href="letter.html">رسالة</a>
-        <a href="favorites.html">كل ما تحب</a>
-    </nav>
-
-    <div class="container">
-        <div class="card">
-            <h1>Hajar Slloub 🤍</h1>
-            <p>
-                🫴🏻🫳🏻
-                <br><br>
-                هذا الموقع ليس مجرد كلمات
-                بل عالم صغير صُنع
-                ليخبرك كل يوم
-                كم أنتِ غالية على قلبي
-                وكم أحبك بلا حدود ✨
+    <!-- محتوى الصفحة الرئيسية -->
+    <div class="main-content">
+        <div class="heart-animation"></div>
+        <h1 class="main-title">هاجر <span class="heart">❤️</span></h1>
+        <h2 class="subtitle">Hajarinw</h2>
+        
+        <div class="romantic-box">
+            <p class="romantic-text">
+                هذا الموقع ليس مجرد كلمات...<br>
+                بل عالم صغير صنع ليخبرك كل يوم<br>
+                كم أنتِ غالية على قلبي<br>
+                وكم أحبك بلا حدود
+            </p>
+            <div class="floating-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        
+        <div class="welcome-box">
+            <p>مرحبًا بك في عالمنا الصغير ABATANW❤️</p>
+            <p>استخدمي شريط التنقل في الأسفل لتتصفحي صفحات الموقع علي فكرة حوبيغكم ازززززمر 😍🫶🏻</p>
+        </div>
+        
+        <div class="secret-message">
+            <button onclick="showSecretMessage()">
+                <i class="fas fa-lock"></i> اضغط هنا لرسالة سرية
+            </button>
+            <p id="secretText" style="display:none; margin-top:15px;">
+                TFOOOO FLAAAAM😇🫶🏻 ❤️
             </p>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>

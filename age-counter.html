@@ -1,20 +1,99 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>عمرها</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمر حبيبتي ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<nav>...</nav>
-
-<div class="container">
-    <div class="card">
-        <h1>🎂 عمر أميرتي</h1>
-        <div id="ageCounter" class="counter"></div>
+    <!-- شريط التنقل المحدث -->
+   <nav class="navigation">
+    <div class="nav-container">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="love-counter.html" class="nav-item">
+            <i class="fas fa-heart"></i>
+            <span>عداد حبنا</span>
+        </a>
+        <a href="age-counter.html" class="nav-item active">
+            <i class="fas fa-birthday-cake"></i>
+            <span>عمر حبيبتي</span>
+        </a>
+        <a href="cats.html" class="nav-item">
+            <i class="fas fa-cat"></i>
+            <span>القطط</span>
+        </a>
+        <a href="love-letter.html" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>رسالة حب</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+            <i class="fas fa-star"></i>
+            <span>مفضلاتها</span>
+        </a>
+        <div class="nav-indicator"></div>
+    </div>
+</nav>
+    <!-- محتوى صفحة عداد العمر -->
+    <div class="main-content">
+        <h1 class="main-title">عمر حبيبتي ❤️</h1>
+        <p class="subtitle">هاجر، أنتِ أجمل ما في حياتي</p>
+        
+        <div class="counter-container">
+            <div class="date-display">
+                <i class="fas fa-birthday-cake"></i> تاريخ ميلاد حبيبتي: 
+                <span id="birthDateDisplay">20 أغسطس 2002</span>
+            </div>
+            
+            <div class="counters-grid">
+                <div class="counter-box">
+                    <div class="counter-value" id="ageYears">0</div>
+                    <div class="counter-label">سنة</div>
+                </div>
+                
+                <div class="counter-box">
+                    <div class="counter-value" id="ageMonths">0</div>
+                    <div class="counter-label">شهر</div>
+                </div>
+                
+                <div class="counter-box">
+                    <div class="counter-value" id="ageDays">0</div>
+                    <div class="counter-label">يوم</div>
+                </div>
+                
+                <div class="counter-box">
+                    <div class="counter-value" id="ageHours">0</div>
+                    <div class="counter-label">ساعة</div>
+                </div>
+                
+                <div class="counter-box">
+                    <div class="counter-value" id="ageMinutes">0</div>
+                    <div class="counter-label">دقيقة</div>
+                </div>
+                
+                <div class="counter-box">
+                    <div class="counter-value" id="ageSeconds">0</div>
+                    <div class="counter-label">ثانية</div>
+                </div>
+            </div>
+            
+            <div class="romantic-text" style="margin-top: 40px;">
+                <i class="fas fa-star" style="color:#ff7b7b;"></i>
+                مع كل ثانية تمر، تزداد جمالاً في عيني
+                <i class="fas fa-star" style="color:#ff7b7b;"></i>
+            </div>
+        </div>
+        
+        <div class="welcome-box">
+            <p>عيد ميلادها القادم بعد: <span id="nextBirthday" style="color:#ff7b7b; font-weight:bold;">0</span> يوم ❤️</p>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
